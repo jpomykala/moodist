@@ -7,15 +7,11 @@ import { AnimatePresence, motion } from 'framer-motion';
 import {
   ShuffleItem,
   ShareItem,
-  DonateItem,
-  NotepadItem,
   SourceItem,
   PomodoroItem,
-  CountdownTimerItem,
   PresetsItem,
   ShortcutsItem,
   SleepTimerItem,
-  BreathingExerciseItem,
 } from './items';
 import { Divider } from './divider';
 import { ShareLinkModal } from '@/components/modals/share-link';
@@ -112,18 +108,12 @@ export function Menu() {
                     <SleepTimerItem open={() => open('sleepTimer')} />
 
                     <Divider />
-                    <BreathingExerciseItem
-                      open={() => open('breathingExercise')}
-                    />
                     <PomodoroItem open={() => open('pomodoro')} />
-                    <NotepadItem open={() => open('notepad')} />
-                    <CountdownTimerItem />
 
                     <Divider />
                     <ShortcutsItem open={() => open('shortcuts')} />
 
                     <Divider />
-                    <DonateItem />
                     <SourceItem />
                   </motion.div>
                 </DropdownMenu.Content>

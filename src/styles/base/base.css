@@ -19,6 +19,7 @@ body {
   /* Workaround for modal and scrollbar layout shifts */
   width: 100vw;
   overflow-x: hidden;
+  margin-bottom: 20rem;
 }
 
 ::selection {

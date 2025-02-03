@@ -16,15 +16,12 @@ export function ScrollToTop() {
   };
 
   useEffect(() => {
-    const onScroll = () => {
-      setIsVisible(document.documentElement.scrollTop >= TOP);
-    };
-
-    onScroll();
-
-    document.addEventListener('scroll', onScroll);
-
-    return () => document.removeEventListener('scroll', onScroll);
+    // const onScroll = () => {
+    //   setIsVisible(document.documentElement.scrollTop >= TOP);
+    // };
+    // onScroll();
+    // document.addEventListener('scroll', onScroll);
+    // return () => document.removeEventListener('scroll', onScroll);
   }, []);
 
   const variants = mix(fade(), slideY(10, 0));
